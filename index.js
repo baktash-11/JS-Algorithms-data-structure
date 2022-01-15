@@ -1,5 +1,5 @@
 console.log("Write a function that accepts a string input and returns a reversed copy!");
-// Big O how the runtime of an algorithm grows as the imputs grow 
+// Big O how the runtime of an algorithm grows as the imputs grow (time complexity)
 function reversString (str){
     let newStr ="";
     for (let i = str.length-1; i >= 0; i--) {
@@ -57,3 +57,22 @@ function printPairs(n){
     }
 }
 printPairs(5);
+
+// example of big-O O(n)
+function logAtLeast5(n){
+    for (let i = 1; i <= Math.max(5, n); i++) {
+        console.log(i + " more than or equal to 5");
+    }
+}
+logAtLeast5(3);
+logAtLeast5(7);
+
+// example of big-O O(1)
+function logAtMostt5(n){
+    for (let i = 1; i <= Math.min(5, n); i++) {
+        console.log(i + " Lest than or equal to 5");
+    }
+}
+console.log("--------------------------------------------------")
+logAtMostt5(3);
+logAtMostt5(7);

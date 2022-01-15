@@ -4,7 +4,6 @@ function reversString (str){
     let newStr ="";
     for (let i = str.length-1; i >= 0; i--) {
         newStr += str[i];
-        console.log(i);
     }
     return newStr;
 }
@@ -15,10 +14,18 @@ console.log(reversString("baktash sana a software engineer!"));
 
 const addUpTo = (n)=>{
     let total =0; 
-    for (let i = 0; i < n; i++) {
+    for (let i = 1; i <= n; i++) {
        total += i; 
     }
     return total; 
 }
 
-console.log(addUpTo(99));
+function addUpTo2(n){
+    return n*(n + 1)/2;
+}
+
+// console.log(addUpTo(1000000000));
+let t1 = performance.now();
+console.log(addUpTo2(1000000000));
+let t2 = performance.now();
+console.log(`Time Elapsed: ${(t2 - t1) / 1000}`);

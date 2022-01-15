@@ -1,0 +1,42 @@
+Big O how the runtime of an algorithm grows as the imputs grow
+Counting Opeerations 
+the speed of an algorithm determined by the numbe of opration take place in it.
+
+example
+    return n*(n + 1)/2;
+
+    Number of operations toke place 
+        1 * multiplication 
+        2 + addtion 
+        3 / division 
+    3 simple operations, regardless of the size of n 
+
+    int this example as the n grows the number of opration grows with it
+
+     for (let i = 1; i <= n; i++) {
+       total += i; 
+    }
+
+    if n = 5 the number of operations will be 5. 
+    n additions 
+    n assignments 
+
+    i ++ n addtions and n assignments
+    i <= n time comparisons 
+
+    total = 0,  1 assignment
+    i = 1, 1 assignment  
+    the  number of operation in this loop is 5n + 2
+    the number of operations grows roughly proportionally with n 
+
+
+big O definition 
+an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant time f(n), as n increases 
+f(n) could be linear (f(n)=n)   a function with input of n and than the out put 
+f(n) could be a quadratic (f(n)=n^2)
+f(n) could be a constant (f(n)=1)
+f(n) could be something entirely different!
+
+the big O notation for our first example is O(1)        as the n grows the number of time doesnt change (almost)
+the big O notation for our second operation is O(n)     as the n grows the number of time grows as well
+
